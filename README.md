@@ -15,7 +15,7 @@ dependency, describe your data and your actions as Rust types, choose a model,
 and start bounded Runs.
 
 The word "reference" sets the priority. The specification is authoritative, and
-a tracked copy of it lives in [sergent/](sergent/README.md), maintained by the
+a tracked copy of it lives in [sergent](sergent/docs/KNOWLEDGE.md), maintained by the
 author. When this implementation and the specification disagree, the
 implementation is wrong.
 

@@ -26,7 +26,7 @@ that promise honest:
   this workspace never restate those rules; they cite the specification and
   explain only what Rust adds. When the implementation and the specification
   disagree, the implementation is wrong.
-- A tracked copy of the specification lives in [sergent/](../sergent/README.md).
+- A tracked copy of the specification lives in [sergent](../sergent/docs/KNOWLEDGE.md).
   Its upstream home is the Sergent reference project, and the author's refresh
   from that project is the only writer of the in-tree copy. Never edit the copy
   by hand.
