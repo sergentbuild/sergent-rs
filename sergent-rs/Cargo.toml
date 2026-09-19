@@ -9,9 +9,9 @@ repository.workspace = true
 publish.workspace = true
 
 [dependencies]
-sergent-rs-core = { path = "../sergent-rs-core", version = "0.1.0" }
-sergent-rs-runtime = { path = "../sergent-rs-runtime", version = "0.1.0" }
-sergent-rs-providers = { path = "../sergent-rs-providers", version = "0.1.0" }
+sergent-rs-core = { path = "../sergent-rs-core", version = "0.1.2" }
+sergent-rs-runtime = { path = "../sergent-rs-runtime", version = "0.1.2" }
+sergent-rs-providers = { path = "../sergent-rs-providers", version = "0.1.2" }
 
 [dev-dependencies]
 schemars.workspace = true
