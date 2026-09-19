@@ -1,0 +1,22 @@
+[package]
+name = "sergent-rs-providers"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Model transport, provider adapters, configuration, and deterministic test support for Sergent."
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+sergent-rs-core = { path = "../sergent-rs-core", version = "0.1.0" }
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
+bytes = "1"
+# Concrete async HTTP transport for every provider adapter. Native request
+# bytes are encoded by this crate; only the default TLS backend is required.
+reqwest = { version = "0.12", default-features = false, features = ["default-tls"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt"] }
+schemars.workspace = true

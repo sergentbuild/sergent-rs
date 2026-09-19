@@ -1,0 +1,20 @@
+[package]
+name = "sergent-rs-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Typed Sergent values, framework interfaces, Proposal Schema machinery, and Operation registry."
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"
+schemars.workspace = true
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+base64 = "0.22"

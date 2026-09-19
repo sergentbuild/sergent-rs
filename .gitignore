@@ -1,0 +1,8 @@
+target/
+.tmp/
+
+AGENTS.md
+
+.env
+synopsis.xml
+HANDOFF-*.md

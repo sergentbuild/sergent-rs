@@ -1,0 +1,26 @@
+[package]
+name = "sergent-rs-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Execution engine for bounded Sergent Runs, deterministic Scene mutation, cancellation, and Run Record construction."
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+sergent-rs-core = { path = "../sergent-rs-core", version = "0.1.0" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros", "sync"] }
+# Runtime owns minting the default harness log identity.
+uuid = { version = "1", features = ["v4"] }
+# The runtime-provided IntentProposalPassThrough sentinel derives JsonSchema so
+# it can serve as a recipe's IntentProposal type.
+schemars.workspace = true
+
+[dev-dependencies]
+# Test-only fake Operations and proposals derive JsonSchema, mirroring how an
+# application authors model-visible types.
+schemars.workspace = true

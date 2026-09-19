@@ -1,0 +1,23 @@
+[workspace]
+resolver = "3"
+members = [
+    "sergent-rs-core",
+    "sergent-rs-runtime",
+    "sergent-rs-providers",
+    "sergent-rs",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+license = "Apache-2.0"
+repository = "https://github.com/sergentbuild/sergent-rs"
+publish = ["crates-io"]
+
+[workspace.dependencies]
+# Pinned exactly and inherited by every member that derives model-visible
+# schemas: schemars emitted structure may change without a semver-major
+# release, and the closed normalizer plus dialect validator are written against
+# this exact output shape.
+schemars = "=1.2.1"

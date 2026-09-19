@@ -1,0 +1,20 @@
+[package]
+name = "sergent-rs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Application-facing Rust API with curated Sergent re-exports and default framework wiring."
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+sergent-rs-core = { path = "../sergent-rs-core", version = "0.1.0" }
+sergent-rs-runtime = { path = "../sergent-rs-runtime", version = "0.1.0" }
+sergent-rs-providers = { path = "../sergent-rs-providers", version = "0.1.0" }
+
+[dev-dependencies]
+schemars.workspace = true
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "sync"] }
