@@ -320,14 +320,18 @@ Each crate keeps a README for its mission and a knowledge file for its design.
 ### Example applications
 
 Complete Sergentic applications built on this stack live in the separate
-sergent-rs-examples repository. A document or comment in this repository
-mentions one only to explain a usage pattern, and writes a plain-text notation
-instead of a link: `sergent-rs-examples:{example}` names an application (for
-example `sergent-rs-examples:ghoul`), and `sergent-rs-examples:{filename}`
-names a file in that repository. Never write a relative link into that
-repository, and never describe it as part of this workspace.
+[sergent-rs-examples project](https://github.com/sergentbuild/sergent-rs-examples).
 
-A new builder starts with `sergent-rs-examples:docs/learning-path.md`, which
-orders the concepts and the applications. The `sergent-rs`
-[knowledge file](../sergent-rs/docs/KNOWLEDGE.md) names the usage pattern each
-application demonstrates.
+A document or comment in this repository may mention these examples to explain a usage pattern.
+
+The references to the example project are expressed as GitHub URLs.
+
+It is feasible to clone the example project as a sibling repository but we do not
+assume this setting and will not write a relative link into that hypothetic sibling repository.
+
+We encourage keen builders wishing to build a working appication with "sergent-rs" as quickly as possible to start with
+[the learning path document in the example project](https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/docs/learning-path.md). This document explains the process
+of building a sergentic app with the rust framework.
+
+The sergent-rs [knowledge file](../sergent-rs/docs/KNOWLEDGE.md) explains the usage pattern each
+application demonstrates, so you can find a pattern suitable for your need.

@@ -16,7 +16,7 @@
 - **Dependency law:** Runtime depends only on core, including in tests. Providers depend only on core. Lower crates never re-export each other. Applications depend on the public API crate alone.
 - **Type law:** Bind Recipe, Scene actions, model client, Scene, Intent proposal, Intent, and Target with generics and associated types. `ModelClient` uses static dispatch. Trait objects are limited to the closed heterogeneous Operation script and observer slots.
 - **Naming:** The Rust `Sergent` type is a configured Sergent Instance backed by the Sergent Runtime; unformatted Sergent names the concept. The four crates are an implementation layering, distinct from the Sergent Vision's three application layers.
-- **Demonstration:** Framework code and documentation MUST NOT invent an application domain to demonstrate the framework. Acceptance evidence uses domain-neutral tests in the crate responsible for each invariant. A usage pattern points at an application in the examples repository with the `sergent-rs-examples:{example}` notation that the [project knowledge file](KNOWLEDGE.md#example-applications) defines.
+- **Demonstration:** Framework code and documentation MUST NOT invent an application domain to demonstrate the framework. Acceptance evidence uses domain-neutral tests in the crate responsible for each invariant. To demonstrate a usage pattern, you can reference an application's entrypoint in the [examples project](https://github.com/sergentbuild/sergent-rs-examples) via GitHub URLs.
 
 ### R02 - Capture Stable Configuration Once
 

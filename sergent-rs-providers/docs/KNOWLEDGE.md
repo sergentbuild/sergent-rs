@@ -177,7 +177,7 @@ harness defect rather than a model failure.
 model client seam, records core requests, and serves either canned text or a
 closed script of output, timeout, and rate-limit outcomes. Those three variants
 exist because downstream tests consume exactly them; study
-`sergent-rs-examples:cog` for the deadline and containment patterns they
+the [cog app](https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/cog/README.md) for the deadline and containment patterns they
 support.
 Timeout and rate limiting reproduce a completed call after the production
 attempt budget is spent, so a downstream test sees production-shaped attempts

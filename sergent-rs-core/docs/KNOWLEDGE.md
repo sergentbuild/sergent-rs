@@ -203,7 +203,7 @@ bounded before they reach a human-readable message; the full raw text stays in
 the sensitive call evidence.
 
 For a complete in-profile Operation set and its registry wiring, study
-`sergent-rs-examples:gomoku`.
+the [gomoku app](https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/gomoku/README.md).
 
 ### Identifiers, requests, and per-call sizing
 

@@ -151,7 +151,7 @@ A plain Scene is cloned at capture, so later caller aliases cannot change what
 the Run observed; commit returns the rehearsed Scene with the revision that
 Scene reports and makes no live comparison. The application is responsible for
 the exclusion that makes this safe. Turn-based application state is the usual
-fit, demonstrated by `sergent-rs-examples:gomoku`.
+fit, demonstrated by the [gomoku app](https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/gomoku/README.md).
 
 `SceneState` is the shared live authority. One allocation holds the locked
 Scene with its matching identity, the immutable stale policy, and whether the
@@ -177,7 +177,8 @@ admissibility pass, and a dry-run against the current Scene. Only then does a
 candidate exist, and one installation seam assigns the Scene and its identity
 together. A rebase never calls a model and never accepts a replacement Target,
 and every rejection leaves live authority unchanged.
-`sergent-rs-examples:ghoul` demonstrates this form.
+
+The [ghoul app](https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/ghoul/README.md) demonstrates this form.
 
 Three evidence rules keep a rebase honest: a conflict the Scene declares
 embeds the original compiled Patch summary; a returned Patch failing a later

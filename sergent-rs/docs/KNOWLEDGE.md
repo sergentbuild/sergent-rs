@@ -177,13 +177,13 @@ policy at the final Scene and the result.
 Complete Sergentic applications live in a separate repository, and each one
 shows a different way to use this crate:
 
-- `sergent-rs-examples:cog` runs one Intent-Only assessment that stops with a
+- **cog**: <https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/cog/README.md> runs one Intent-Only assessment that stops with a
   typed decision under a deadline the application keeps.
-- `sergent-rs-examples:gomoku` plays turn by turn on plain Scene authority
+- **gomoku**: <https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/gomoku/README.md> plays turn by turn on plain Scene authority
   with a pass-through Intent and one Plan call.
-- `sergent-rs-examples:ghoul` fans out concurrent Runs over shared live Scene
+- **ghoul**: <https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/ghoul/README.md> fans out concurrent Runs over shared live Scene
   authority and merges them with deterministic rebase.
-- `sergent-rs-examples:socrates` interviews a user across rounds and persists
+- **socrates**: <https://raw.githubusercontent.com/sergentbuild/sergent-rs-examples/refs/heads/main/socrates/README.md> interviews a user across rounds and persists
   each accepted Scene before adopting it.
 
 Read them for usage patterns; the specification stays the authority on
